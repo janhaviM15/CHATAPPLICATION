@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real chat application</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+             background-color: #f4f4f4; 
+        }
+        #chat-container{
+            max-width: 600px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            align-items: center;
+            /* border: 2px solid black; */
+            padding: 8px;
+            background-image: url();
+        }
+        #chat-header{
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            /* width: 400px;
+            height: 400px;
+            border: 5px;
+            border-color: black ;
+            align-items: center;
+        
+            background: #e30c0c; */
+        }
+        #chat-output{
+            height: 300px;
+            overflow-y: scroll;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+
+        }
+
+        #input-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+
+        }
+        #message-input {
+            width: 70%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+        #send-button{
+            width: 28%;
+         
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        
+        }
+        #send-button:hover{
+            background-color: #db8234;
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    <div id="chat-container">
+
+        
+        <div id="chat-header"></i> 
+            <h1>REAL-TIME CHAT APP</h1>
+        </div>
+            <div id="chat-output"></div>
+
+            <div id="input-container">
+                <input type="text" id="message-input" placeholder="TYPE YOUR MESSAGE....">
+                <BUtton id="send-button">Send</BUtton>
+                
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
